@@ -20,7 +20,7 @@ class player:
             print("wow, you got a ladder here \n")
             self.counter=ladder[self.counter]
         elif(self.counter in snakes):
-            print("oops , its a snake , its time to run back")
+            print("oops , its a snake , its time to run back \n")
             self.counter=snakes[self.counter]
         else:
             if(self.counter>100):
@@ -32,15 +32,17 @@ players=[]
 ladder={4:14, 9:31, 20:38, 28:84, 40:59, 63:81, 71:91}
 snakes={99:78, 95:75, 93:73, 87:24, 62:18, 64:60, 54:34, 17:7}
 for i in range(no_of_players):
-    print("name of player ",i+1)
+    print("name of player",i+1)
     players.append(player(input()))
 
-print("all the best to all players ")
+print("all the best to all players \n")
+print("press space bar to roll dice\n")
 for i in players:
     print(i.names(), end=' ')
 print("\n")
 winners_declared=0
 print("lets start the game")
+print("----------------------------------------------------------------------")
 while(True):
     for i in players:
         print("turn of "+i.names()+" to throw the die")
@@ -51,7 +53,7 @@ while(True):
         if (i.counter==100):
             print(i.names()+" won the match")
             winners_declared=1
-        
+            break 
         print("The position of "+ i.names()+" is " , i.counter)
         print("\n")
     if winners_declared==1:
