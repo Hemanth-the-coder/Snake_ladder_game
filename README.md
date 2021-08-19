@@ -1,5 +1,5 @@
 # Snake_ladder_game
-Play snake and ladder game with on just terminal 
+Play snake and ladder game on just terminal 
 
 
 The image of snake and ladder board is uploaded above 
